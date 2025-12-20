@@ -1,0 +1,130 @@
+.experience {
+  padding: 100px 20px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  color: var(--accent-primary);
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--border-color);
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 40px;
+}
+
+.timelineMarker {
+  position: absolute;
+  left: -9px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--accent-primary);
+  border: 3px solid var(--bg-primary);
+  box-shadow: 0 0 0 3px var(--accent-primary);
+}
+
+.timelineContent {
+  background-color: var(--bg-secondary);
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.timelineContent:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.1);
+}
+
+.role {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 5px;
+}
+
+.company {
+  font-size: 18px;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+}
+
+.period {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  margin-bottom: 15px;
+  font-family: 'Courier New', monospace;
+}
+
+.responsibilities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.responsibilities li {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.responsibilities li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timelineItem {
+    padding-left: 30px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .company {
+    font-size: 16px;
+  }
+}
+
+

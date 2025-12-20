@@ -1,0 +1,82 @@
+.certifications {
+  padding: 100px 20px;
+}
+
+.sectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.number {
+  color: var(--accent-primary);
+  font-family: 'Courier New', monospace;
+  font-size: 24px;
+}
+
+.certGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.certCard {
+  background-color: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.certCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+}
+
+.certIcon {
+  color: var(--accent-primary);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.certName {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.certIssuer {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.certYear {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--bg-tertiary);
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--accent-primary);
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 24px;
+  }
+
+  .certGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
