@@ -1,7 +1,6 @@
 # Gubba Shiva Prasad - Portfolio
 
-A modern, dark-themed personal portfolio website built with Next.js and CSS Modules.
-
+This is My Portfolio. Made with lot's of Love❤️
 ## Features
 
 - 🎨 Modern dark theme with smooth animations
