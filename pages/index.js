@@ -18,7 +18,7 @@ export default function Home() {
           content="Portfolio of Gubba Shiva Prasad - Software Engineer specializing in Backend and Full-Stack Development. 2026 CSE Graduate."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
       <main>
@@ -33,5 +33,6 @@ export default function Home() {
     </>
   );
 }
+
 
 

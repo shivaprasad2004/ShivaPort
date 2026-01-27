@@ -1,0 +1,202 @@
+\documentclass[10pt, letterpaper]{article} 
+
+% ==================== Packages ==================== 
+\usepackage[ 
+    ignoreheadfoot, 
+    top=1cm, 
+    bottom=2cm, 
+    left=2cm, 
+    right=2cm, 
+    footskip=1cm, 
+]{geometry} 
+\usepackage{titlesec} 
+\usepackage{tabularx} 
+\usepackage{array} 
+\usepackage[dvipsnames]{xcolor} 
+\usepackage{enumitem} 
+\usepackage{fontawesome5} 
+\usepackage{changepage} 
+\usepackage{paracol} 
+\usepackage{needspace} 
+\usepackage{iftex} 
+
+% ==================== Dark Theme Colors ==================== 
+\definecolor{backgroundColor}{RGB}{30, 30, 33} 
+\definecolor{textColor}{RGB}{225, 225, 225} 
+\definecolor{primaryColor}{RGB}{255, 255, 255} % Headers
+\definecolor{accentColor}{RGB}{100, 149, 237} % CornflowerBlue for links
+
+\usepackage[colorlinks=true, urlcolor=accentColor, linkcolor=accentColor]{hyperref} 
+
+\ifPDFTeX 
+    \input{glyphtounicode} 
+    \pdfgentounicode=1 
+    \usepackage[T1]{fontenc} 
+    \usepackage[utf8]{inputenc} 
+    \usepackage{lmodern} 
+\fi 
+\usepackage{charter} 
+
+% ==================== Layout ==================== 
+\raggedright 
+\pagestyle{empty} 
+\setlength{\parindent}{0pt} 
+\setlength{\columnsep}{0.15cm} 
+\setcounter{secnumdepth}{0} 
+\pagenumbering{gobble} 
+
+% Set Page and Text Color
+\pagecolor{backgroundColor}
+\color{textColor}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large\color{primaryColor}}{}{0pt}{}[\vspace{1pt}\color{primaryColor}\titlerule] 
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm} 
+\renewcommand\labelitemi{$\vcenter{\hbox{\small\color{textColor}$\bullet$}}$} 
+
+\newenvironment{highlights}{ 
+\begin{itemize}[ 
+    topsep=0.10cm, 
+    parsep=0.10cm, 
+    partopsep=0pt, 
+    itemsep=2pt, 
+    leftmargin=10pt,
+    label=\textcolor{textColor}{\textbullet}
+]} 
+{\end{itemize}} 
+
+\newenvironment{onecolentry}{ 
+\begin{adjustwidth}{0cm}{0cm}} 
+{\end{adjustwidth}} 
+
+\newenvironment{twocolentry}[2][]{ 
+\onecolentry 
+\def\secondColumn{#2} 
+\setcolumnwidth{\fill, 4.5cm} 
+\begin{paracol}{2}} 
+{ 
+\switchcolumn \raggedleft \secondColumn 
+\end{paracol} 
+\endonecolentry 
+} 
+
+\newenvironment{header}{ 
+\setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}} 
+{\par\kern\topsep} 
+
+% ==================== Document ==================== 
+\begin{document} 
+
+% ---------- Header ---------- 
+\begin{header} 
+    \fontsize{25pt}{25pt}\selectfont \textbf{\color{primaryColor}GUBBA SHIVA PRASAD} 
+
+    \normalsize 
+    Hyderabad, India \kern 5pt | \kern 5pt 
+    \href{mailto:shivaprasad040804@gmail.com}{shivaprasad040804@gmail.com} \kern 5pt | \kern 5pt 
+    +91 9177769132 \kern 5pt | \kern 5pt 
+    \href{https://www.linkedin.com/in/shiva-prasad-gupta-76584124b/}{LinkedIn}  \kern 5pt | \kern 5pt 
+    \href{https://github.com/shivaprasad2004}{GitHub} 
+\end{header} 
+
+\vspace{5pt} 
+
+% ---------- Summary ---------- 
+\section{Professional Summary} 
+\begin{onecolentry} 
+Aspiring Software Engineer who loves problem solving and Java. Completed 750+ DSA problems on LeetCode, GFG, CodeChef, and HackerRank, with a strong foundation in data structures and algorithms. Skilled in building scalable applications and designing REST APIs with clean and modular code. Interested in system design and writing efficient software that performs well. 
+\end{onecolentry} 
+
+% ---------- Education ---------- 
+\section{Education} 
+
+\begin{twocolentry}{June 2026} 
+\textbf{Bachelor of Technology in Computer Science and Engineering}, Anurag University 
+\end{twocolentry} 
+\begin{onecolentry} 
+\textbf{GPA:} 8.71/10 
+\end{onecolentry} 
+
+\begin{twocolentry}{March 2022} 
+\textbf{Sri Chaitanya Junior College} — Intermediate (MPC) \\ 
+\textbf{Percentage:} 90.7\% 
+\end{twocolentry} 
+
+\begin{twocolentry}{March 2020} 
+\textbf{Sri Krishnaveni Talent School} — Secondary School Certificate \\ 
+\textbf{Percentage:} 100\% 
+\end{twocolentry} 
+
+% ---------- Technical Skills ---------- 
+\section{Technical Skills} 
+\begin{onecolentry} 
+\textbf{Programming:} Java, JavaScript, Python \\ 
+\textbf{Web Development:} React.js, Node.js, Express.js, HTML, CSS, REST APIs \\ 
+\textbf{Databases:} MySQL\\ 
+\textbf{DevOps \& Tools:} Git, GitHub, Docker, AWS (EC2, S3) \\ 
+\textbf{Core CS:} Data Structures, Algorithms, OOP, OS, DBMS, CN, System Design, ML 
+\end{onecolentry} 
+
+% ---------- Projects ---------- 
+\section{Projects} 
+
+% Project 1 
+\begin{twocolentry}{\href{https://github.com/shivaprasad2004/fake-news-detector}{GitHub}} 
+\textbf{FinBoard} — MERN Stack (2026) 
+\hfill \href{https://finboard-analytics.netlify.app/}{Live Demo} 
+\end{twocolentry} 
+\begin{onecolentry} 
+\begin{highlights} 
+    \item Developed a user-friendly finance dashboard builder that 
+supports real-time data visualization. 
+    \item Enabled seamless integration with multiple financial APIs 
+(stocks). 
+    \item Provided intuitive widget management with drag-and-drop 
+functionality. 
+    \item Implemented robust state management and data persistence 
+capabilities. 
+\end{highlights} 
+\end{onecolentry} 
+
+
+% Project 2 
+\begin{twocolentry}{\href{https://github.com/shivaprasad2004/fake-news-detector}{GitHub}} 
+\textbf{MassMutual Renewal System} — MERN Stack, MySQL (2025) 
+\hfill \href{https://github.com/shivaprasad2004/MassMutual-Renewal-System}{GitHub Link} 
+\end{twocolentry} 
+\begin{onecolentry} 
+\begin{highlights} 
+    \item Built a full-stack insurance renewal management system using React, Node.js, Express, and MySQL. 
+    \item Developed secure CRUD APIs, role-based access, and reusable backend modules, improving maintainability. 
+    \item Implemented real-time filtering, sorting, search, and colour-coded policy alerts to boost agent productivity. 
+    \item Integrated Axios-based client–server communication ensuring smooth and optimised data flow. 
+\end{highlights} 
+\end{onecolentry} 
+
+
+% Project 3 
+\begin{twocolentry}{\href{https://github.com/shivaprasad2004}{GitHub}} 
+\textbf{AI Multi-Agent Reliability Gateway} — Node.js, Python, AWS, Docker(2025) 
+\end{twocolentry} 
+\begin{onecolentry} 
+\begin{highlights} 
+    \item Built a scalable \textbf{AI Multi-Agent Reliability Gateway} with modular agent pipelines, fallback logic, and safety verification. 
+    \item Implemented reliability mechanisms including retries, validation layers, and circuit breakers to prevent agent failures and hallucinations. 
+    \item Added real-time monitoring, logging, and tracing to ensure predictable performance and strong systems. 
+\end{highlights}
+\end{onecolentry}
+
+% ---------- Experience ---------- 
+\section{Experience} 
+
+\begin{twocolentry}{}{\textbf{Software Developer Intern} at} 
+\textbf{FlipNow Solutions}  (Present-2026) 
+\end{twocolentry} 
+\begin{onecolentry} 
+\begin{highlights} 
+    \item Designed and implemented AI-driven features by analyzing real world problem statements and translating user requirements into technical solutions. 
+    \item Built and tested application modules while collaborating with cross-functional teams to improve system performance and usability. 
+    \item Contributed to platform enhancement by integrating new functionalities.
+\end{highlights} 
+\end{onecolentry}
+
+\end{document}

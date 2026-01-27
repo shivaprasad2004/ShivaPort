@@ -4,14 +4,13 @@ export default function Experience() {
   const experiences = [
     {
       role: 'Software Developer Intern',
-      company: 'Innobyte Services',
-      period: 'Present – 2025',
-      location: 'Remote',
+      company: 'FlipNow Solutions',
+      period: 'Present – 2026',
+      location: 'Hyderabad, India',
       responsibilities: [
-        'Developed and maintained backend RESTful APIs using Node.js and Express.js, with database integration using MySQL',
-        'Designed and implemented CRUD operations, authentication, and validation logic for scalable web applications',
-        'Worked on frontend integration using React.js to ensure seamless interaction between client and server',
-        'Collaborated with the development team, participated in code reviews, and followed Git-based version control practices'
+        'Designed and implemented AI-driven features by analyzing real world problem statements and translating user requirements into technical solutions',
+        'Built and tested application modules while collaborating with cross-functional teams to improve system performance and usability',
+        'Contributed to platform enhancement by integrating new functionalities'
       ]
     }
   ];

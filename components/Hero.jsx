@@ -40,9 +40,6 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      <div className={styles.scrollIndicator}>
-        <div className={styles.mouse}></div>
-      </div>
     </section>
   );
 }

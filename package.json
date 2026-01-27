@@ -2,6 +2,10 @@
   "name": "shiva-portfolio",
   "version": "1.0.0",
   "description": "Personal portfolio website for Gubba Shiva Prasad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shivaprasad2004/ShivaPort.git"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",

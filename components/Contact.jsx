@@ -36,7 +36,7 @@ export default function Contact() {
             <span>Email</span>
           </a>
           <a
-            href="https://github.com"
+            href="https://github.com/shivaprasad2004"
             className={styles.contactLink}
             target="_blank"
             rel="noopener noreferrer"
@@ -58,14 +58,6 @@ export default function Contact() {
             <span>LinkedIn</span>
           </a>
         </div>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1wDwVDvazJ8re3NDFVLvXLBaNaMH1813K"
-          className={styles.resumeBtn}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download Resume
-        </a>
       </div>
     </section>
   );
